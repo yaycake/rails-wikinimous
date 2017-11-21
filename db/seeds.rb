@@ -7,9 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-articles = Article.create(
-
   10.times do |article|
-    Article.create([{ title: Faker::RickAndMorty.character }, {content: Faker::RickAndMorty.quote  })
+    Article.create([{ title: Faker::RickAndMorty.character }, {content: Faker::RickAndMorty.quote }])
   end
 
