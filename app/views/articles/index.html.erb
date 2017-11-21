@@ -2,8 +2,7 @@
 <p>Find me in app/views/articles/index.html.erb</p>
 <ul>
   <% @articles.each do |article| %>
-  <li>
-    <%= "#{article[:title]}" %>
-  </li>
+  <li><%= "#{article[:title]}" %></li>
+  <% end %>
 </ul>
-<% end %>
+

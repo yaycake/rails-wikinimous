@@ -1,3 +1,5 @@
+require 'kramdown'
+
 class ArticlesController < ApplicationController
   before_action :set_article, only: [:show, :edit, :update, :destroy]
 
@@ -6,6 +8,7 @@ class ArticlesController < ApplicationController
   end
 
   def show        # GET /restaurants/:id
+  @text=Kramdown::Document.new(@article.title).to_html
   end
 
   def new           # GET /restaurants/new

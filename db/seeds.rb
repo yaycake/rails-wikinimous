@@ -8,6 +8,6 @@
 
 
   10.times do |article|
-    Article.create([{ title: Faker::RickAndMorty.character }, {content: Faker::RickAndMorty.quote }])
+    Article.create(title: Faker::RickAndMorty.character, content: Faker::RickAndMorty.quote)
   end
 
